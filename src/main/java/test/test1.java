@@ -5,6 +5,9 @@ public class test1 {
         Bank bank1 = Bank.getInstance();
         Bank bank2 = Bank.getInstance();
         System.out.println(bank1 == bank2);
+        GirlFriend girlFriend = GirlFriend.getInstance();
+        GirlFriend girlFriend1 = GirlFriend.getInstance();
+        System.out.println(girlFriend1 == girlFriend);
     }
 }
 //饿汉式
@@ -26,7 +29,7 @@ class GirlFriend{
     //2.声明当前类的实例
     private static GirlFriend instance = null;
     //3.声明方法得到实例
-    private static GirlFriend getInstance(){
+    public static GirlFriend getInstance(){
         //判断当前类的实例是否是为null
         if(instance == null) {
             instance = new GirlFriend();
