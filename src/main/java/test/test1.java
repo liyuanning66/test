@@ -10,7 +10,7 @@ public class test1 {
         System.out.println(girlFriend1 == girlFriend);
     }
 }
-//饿汉式
+//饿汉式（线程安全的）
 class Bank{
     //1.私有构造器
     private Bank(){
@@ -22,6 +22,7 @@ class Bank{
         return instance;
     }
 }
+//懒汉式（线程不安全）
 class GirlFriend{
     //1.私有化构造器
     private  GirlFriend(){}

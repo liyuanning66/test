@@ -6,6 +6,6 @@ public class JavaTest {
         System.out.println("第二次提交");
         System.out.println("再一次提交");
         System.out.println("再次尝试一次");
-         System.out.println("从github上面拉去代码下来");
+        System.out.println("从github上面拉去代码下来");
     }
 }
